@@ -1,0 +1,33 @@
+services:
+  localstack:
+    image: localstack/localstack:latest
+    container_name: localstack
+    ports:
+      - "4566:4566"
+      - "4571:4571"
+    environment:
+      AWS_ENDPOINT: "http://localstack:4566"
+      EDGE_PORT: "4566"
+      S3_FORCE_PATH_STYLE: "1"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+
+  cdk:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cdk-demo
+    working_dir: /workspace
+    volumes:
+      - ../:/workspace
+    command: tail -f /dev/null
+    environment:
+      AWS_ACCESS_KEY_ID: test
+      AWS_SECRET_ACCESS_KEY: test
+      AWS_DEFAULT_REGION: us-west-2
+      CDK_DEFAULT_ACCOUNT: "000000000000"
+      CDK_DEFAULT_REGION: us-west-2
+      AWS_ENDPOINT_URL: "http://localstack:4566"
+      AWS_ENDPOINT_URL_S3: "http://s3.localstack.localstack.cloud:4566"
+    depends_on:
+      - localstack

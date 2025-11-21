@@ -1,0 +1,188 @@
+{
+    "Roles": [
+        {
+            "Path": "/",
+            "RoleName": "cdk-hnb659fds-lookup-role-000000000000-us-west-2",
+            "RoleId": "AROAQAAAAAAAATKU2CHXF",
+            "Arn": "arn:aws:iam::000000000000:role/cdk-hnb659fds-lookup-role-000000000000-us-west-2",
+            "CreateDate": "2025-11-20T15:34:32.676215+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "Null": {
+                                "sts:ExternalId": "true"
+                            }
+                        },
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    },
+                    {
+                        "Action": "sts:TagSession",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "StackOne-MyRoleF48FFE04-b387c0b3",
+            "RoleId": "AROAQAAAAAAAEV65LH4SG",
+            "Arn": "arn:aws:iam::000000000000:role/StackOne-MyRoleF48FFE04-b387c0b3",
+            "CreateDate": "2025-11-20T15:35:22.661524+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "s3.amazonaws.com"
+                        }
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cdk-hnb659fds-file-publishing-role-000000000000-us-west-2",
+            "RoleId": "AROAQAAAAAAAH4UPJDD2I",
+            "Arn": "arn:aws:iam::000000000000:role/cdk-hnb659fds-file-publishing-role-000000000000-us-west-2",
+            "CreateDate": "2025-11-20T15:34:32.665968+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "Null": {
+                                "sts:ExternalId": "true"
+                            }
+                        },
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    },
+                    {
+                        "Action": "sts:TagSession",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cdk-hnb659fds-image-publishing-role-000000000000-us-west-2",
+            "RoleId": "AROAQAAAAAAAHVMGK2KKZ",
+            "Arn": "arn:aws:iam::000000000000:role/cdk-hnb659fds-image-publishing-role-000000000000-us-west-2",
+            "CreateDate": "2025-11-20T15:34:32.671388+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "Null": {
+                                "sts:ExternalId": "true"
+                            }
+                        },
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    },
+                    {
+                        "Action": "sts:TagSession",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cdk-hnb659fds-deploy-role-000000000000-us-west-2",
+            "RoleId": "AROAQAAAAAAAIZDNLJ3NT",
+            "Arn": "arn:aws:iam::000000000000:role/cdk-hnb659fds-deploy-role-000000000000-us-west-2",
+            "CreateDate": "2025-11-20T15:34:32.659758+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Condition": {
+                            "Null": {
+                                "sts:ExternalId": "true"
+                            }
+                        },
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    },
+                    {
+                        "Action": "sts:TagSession",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "AWS": "000000000000"
+                        }
+                    }
+                ]
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "cdk-hnb659fds-cfn-exec-role-000000000000-us-west-2",
+            "RoleId": "AROAQAAAAAAAMPWSK6P6C",
+            "Arn": "arn:aws:iam::000000000000:role/cdk-hnb659fds-cfn-exec-role-000000000000-us-west-2",
+            "CreateDate": "2025-11-20T15:34:32.425888+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "cloudformation.amazonaws.com"
+                        }
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "MaxSessionDuration": 3600
+        },
+        {
+            "Path": "/",
+            "RoleName": "StackTwo-MyRoleF48FFE04-775b9a31",
+            "RoleId": "AROAQAAAAAAAOLM4E4KQJ",
+            "Arn": "arn:aws:iam::000000000000:role/StackTwo-MyRoleF48FFE04-775b9a31",
+            "CreateDate": "2025-11-20T15:35:30.824144+00:00",
+            "AssumeRolePolicyDocument": {
+                "Statement": [
+                    {
+                        "Action": "sts:AssumeRole",
+                        "Effect": "Allow",
+                        "Principal": {
+                            "Service": "s3.amazonaws.com"
+                        }
+                    }
+                ],
+                "Version": "2012-10-17"
+            },
+            "MaxSessionDuration": 3600
+        }
+    ]
+}

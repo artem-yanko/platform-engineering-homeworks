@@ -1,0 +1,12 @@
+{
+    "name": "pulumi-docker-demo",
+    "main": "index.ts",
+    "devDependencies": {
+        "@types/node": "^18",
+        "typescript": "^5.0.0"
+    },
+    "dependencies": {
+        "@pulumi/docker": "^4.10.0",
+        "@pulumi/pulumi": "^3.208.0"
+    }
+}
