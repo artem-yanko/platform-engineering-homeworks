@@ -171,3 +171,13 @@ Web check:
 
 #### Challenges
 No challenges faced during deployment
+
+---
+
+## CUE Lang Homework
+
+Solution can be found here --> [**README.md**](./homework/cue/README.md)
+
+## Timoni Homework
+
+Solution can be found here --> [**README.md**](./homework/timoni/README.md)
